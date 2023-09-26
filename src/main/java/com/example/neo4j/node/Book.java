@@ -1,6 +1,6 @@
 package com.example.neo4j.node;
 
-import org.neo4j.ogm.annotation.Id;
+import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Property;
 import org.springframework.data.neo4j.core.schema.Relationship;

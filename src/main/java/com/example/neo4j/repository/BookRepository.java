@@ -13,5 +13,4 @@ public interface BookRepository extends Neo4jRepository<Book, String> {
 
 	List<Book> findAllByYear(Integer year);
 	
-	Book findByName(String name);
 }

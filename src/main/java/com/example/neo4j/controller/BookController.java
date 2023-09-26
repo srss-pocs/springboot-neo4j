@@ -29,9 +29,9 @@ public class BookController {
 		return (List<Book>) repository.findAll();
 	}
 
-	@GetMapping("/getBook/{name}")
-	public Book getBook(@PathVariable String name) {
-		return repository.findByName(name);
+	@GetMapping("/getBook/{year}")
+	public List<Book> getBook(@PathVariable int year) {
+		return repository.findAllByYear(year);
 	}
 
 	@DeleteMapping("/deleteBook/{id}")
